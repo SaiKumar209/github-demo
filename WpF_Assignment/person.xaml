@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpF_Assignment.person"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpF_Assignment"
+        mc:Ignorable="d"
+        Title="person" Height="450" Width="800">
+    <Grid Background="AliceBlue" >
+        <Label x:Name="personid" Content="PersonId" HorizontalAlignment="Left" Margin="39,29,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold"/>
+        <TextBox x:Name="Txt_Id" HorizontalAlignment="Left" Margin="133,33,0,0" TextAlignment="Justify" TextWrapping="Wrap" VerticalAlignment="Top" Width="138"/>
+        <Label Content="FirstName" HorizontalAlignment="Left" Margin="39,67,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold"/>
+        <TextBox x:Name="Txt_First" HorizontalAlignment="Left" Margin="133,67,0,0" TextAlignment="Justify" TextWrapping="Wrap" VerticalAlignment="Top" Width="138"/>
+       
+        <Label x:Name="personid_Copy5" Content="LastName" HorizontalAlignment="Left" Margin="39,98,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold"/>
+        <TextBox x:Name="Txt_Last" HorizontalAlignment="Left" TextAlignment="Justify" Margin="133,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138"/>
+        <Label Content="Address" HorizontalAlignment="Left" Margin="39,129,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold"/>
+        <TextBox x:Name="Txt_Add" HorizontalAlignment="Left" TextAlignment="Justify" Margin="133,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138"/>
+        <Button x:Name="Insert" Content="Insert" HorizontalAlignment="Left" Margin="21,180,0,0" VerticalAlignment="Top" Width="102" Click="Insert_Click"/>
+        <Button x:Name="Delete" Content="Delete" HorizontalAlignment="Left" Margin="145,180,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.54,1.044" Width="94" Click="Delete_Click"/>
+        <Button x:Name="Update" Content="Update" HorizontalAlignment="Left" Margin="256,180,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.54,1.044" Width="103" Click="Update_Click"/>
+        <Button x:Name="Reset" Content="Reset" HorizontalAlignment="Left" Margin="379,180,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.54,1.044" Width="95" Height="20" Click="Reset_Click"/>
+        <Button x:Name="Show" Content="Show" HorizontalAlignment="Left" Margin="510,180,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.54,1.044" Width="99" Click="Show_Click"/>
+        <Button x:Name="previous" Content="BackWard" HorizontalAlignment="Left" Margin="338,29,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.333,-0.269" Width="115" Click="previous_Click"/>
+        <Button x:Name="Next" Content="Forward" HorizontalAlignment="Left" Margin="338,60,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.333,-0.269" Width="115" Click="Next_Click"/>
+        <Button x:Name="First_record" Content="First" HorizontalAlignment="Left" Margin="338,91,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.333,-0.269" Width="115" Click="First_record_Click"/>
+        <Button x:Name="Last_record" Content="Last" HorizontalAlignment="Left" Margin="338,131,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.333,-0.269" Width="115" Click="Last_record_Click"/>
+
+    </Grid>
+</Window>
